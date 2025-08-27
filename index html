@@ -7,7 +7,7 @@
   <style>
     :root {
       --verde-claro: #a5d6a7;
-      --verde-medio: #66bb6a;
+      --verdeginas da web-medio: #66bb6a;
       --verde-escuro: #388e3c;
       --fundo-claro: #f9fdf9;
       --branco: #ffffff;
@@ -33,7 +33,7 @@
       color: var(--branco);
       padding: 2rem 1rem;
       text-align: center;
-    }
+    }ginas da web
 
     header h1 {
       margin: 0;
@@ -115,7 +115,7 @@
     }
 
     .image-container div {
-      text-align: center;
+      text-alginas da webign: center;
     }
 
     .image-container img {
@@ -254,7 +254,7 @@
     </section>
     <h3>Atividades Interativas</h3>
 
-<form onsubmit="alert('Atividade enviada! Obrigado por participar.'); return false;">
+<form onsubmiginas da webt="alert('Atividade enviada! Obrigado por participar.'); return false;">
   <p><strong>1. O que você mais gosta na vida no campo?</strong></p>
   <textarea name="pergunta1" rows="4" required placeholder="Escreva sua resposta..."></textarea>
 
@@ -316,6 +316,8 @@
       <blockquote>
         "O Agrinho fez a comunidade escolar se sentir parte de algo maior."<br>
         <cite>– Diretora Silvia</cite>
+        <blockquote>
+        
       </blockquote>
     </section>
 
