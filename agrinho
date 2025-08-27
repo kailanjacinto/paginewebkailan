@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agrinho 2025 - Festejando a Conexão Campo-Cidade</title>
+  <style>
+    :root {
+      --verde-claro: #a5d6a7;
+      --verdeginas da web-medio: #66bb6a;
+      --verde-escuro: #388e3c;
+      --fundo-claro: #f9fdf9;
+      --branco: #ffffff;
+      --cinza-escuro: #333;
+      --cinza-claro: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--fundo-claro);
+      color: var(--cinza-escuro);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--verde-escuro), var(--verde-medio));
+      color: var(--branco);
+      padding: 2rem 1rem;
+      text-align: center;
+    }ginas da web
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    nav {
+      background-color: var(--verde-escuro);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--branco);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: var(--verde-medio);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--branco);
+      border-radius: 12px;
+      padding: 1.8rem 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+    }
+
+    section h2 {
+      color: var(--verde-escuro);
+      border-bottom: 3px solid var(--verde-claro);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    ul li strong {
+      color: var(--verde-medio);
+    }
+
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .image-container div {
+      text-alginas da webign: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .image-container p {
+      font-size: 0.9rem;
+      color: var(--cinza-claro);
+      margin: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: 1.5px solid var(--verde-claro);
+      border-radius: 8px;
+      resize: vertical;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--verde-escuro);
+      outline: none;
+    }
+
+    button {
+      background-color: var(--verde-escuro);
+      color: var(--branco);
+      font-weight: 700;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: var(--verde-medio);
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid var(--verde-medio);
+      margin: 1rem 0;
+      padding-left: 1rem;
+      color: var(--cinza-claro);
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.3rem;
+      font-weight: 700;
+      color: var(--verde-escuro);
+    }
+
+    footer {
+      background-color: var(--verde-escuro);
+      color: var(--branco);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsividade */
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.7rem;
+      }
+
+      main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Agrinho 2025</h1>
+    <p>Festejando a Conexão Campo-Cidade</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Tema</h2>
+      <p>
+        O Agrinho 2025, com o tema "Festejando a Conexão Campo-Cidade", destaca a interdependência entre as áreas rurais e urbanas. O campo é essencial para a produção de alimentos, tradições e preservação ambiental, enquanto a cidade oferece inovação, serviços e educação. Essa relação vai além do econômico, abrangendo aspectos sociais, culturais e ambientais. Valorizar essa parceria é fundamental para construir um futuro sustentável, promovendo respeito às tradições rurais, apoio à agricultura familiar, investimento em tecnologia e inclusão, resultando em uma sociedade mais justa, equilibrada e conectada.
+
+      <p>
+        O objetivo é mostrar como a integração entre o respeito às tradições rurais e o avanço urbano pode gerar benefícios mútuos, promovendo um desenvolvimento sustentável, a preservação cultural e a melhoria da qualidade de vida para comunidades rurais e urbanas.
+
+.
+      </p>
+    </section>
+
+    <section id="atividades">
+      <h2>Atividades</h2>
+      <ul>
+        <li><strong>Feiras com produtos locais:</strong> espaços para pequenos produtores venderem frutas, verduras, artesanatos e comidas típicas diretamente ao consumidor.</li>
+        <li><strong>Oficinas de agricultura urbana:</strong> atividades práticas para ensinar como plantar em casa, fazer hortas verticais e composteiras.</li>
+        <li><strong>Palestras sobre sustentabilidade:</strong> especialistas debatem sobre consumo consciente, reciclagem, agroecologia e preservação ambiental.</li>
+        <li><strong>Apresentações culturais:</strong> danças típicas, música caipira, contação de histórias e peças teatrais que representam a vida no campo e na cidade.</li>
+      </ul>
+    </section>
+    <h3>Atividades Interativas</h3>
+
+<form onsubmiginas da webt="alert('Atividade enviada! Obrigado por participar.'); return false;">
+  <p><strong>1. O que você mais gosta na vida no campo?</strong></p>
+  <textarea name="pergunta1" rows="4" required placeholder="Escreva sua resposta..."></textarea>
+
+  <p><strong>2. Qual dessas opções melhor representa a conexão campo-cidade?</strong></p>
+  <label><input type="radio" name="pergunta2" required /> O transporte de alimentos do campo para a cidade</label><br />
+  <label><input type="radio" name="pergunta2" /> A instalação de fábricas na zona rural</label><br />
+  <label><input type="radio" name="pergunta2" /> O crescimento das cidades sem planejamento</label>
+
+  <p><strong>3. Quais ações ajudam a valorizar o meio rural? (escolha as que quiser)</strong></p>
+  <label><input type="checkbox" name="pergunta3" /> Comprar de pequenos produtores</label><br />
+  <label><input type="checkbox" name="pergunta3" /> Visitar feiras rurais</label><br />
+  <label><input type="checkbox" name="pergunta3" /> Ignorar tradições do campo</label><br />
+  <label><input type="checkbox" name="pergunta3" /> Participar de projetos como o Agrinho</label>
+
+  <br><br>
+  <button type="submit">Enviar Respostas</button>
+</form>
+
+
+    <section id="agenda">
+      <h2>Agenda de Eventos</h2>
+      <ul>
+        <li><strong>10/06 - Abertura Oficial:</strong> Apresentação do projeto Agrinho 2025 e suas propostas.</li>
+        <li><strong>15/06 - Feira Rural:</strong> Exposição de produtos da agricultura familiar na praça central.</li>
+        <li><strong>20/06 - Oficina Verde:</strong> Horta urbana e compostagem com alunos do 6º ano.</li>
+        <li><strong>25/06 - Mostra Cultural:</strong> Apresentações artísticas das escolas participantes.</li>
+        <li><strong>30/06 - Encerramento:</strong> Painel com convidados sobre o futuro campo-cidade.</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="image-container">
+        <div>
+          <img src="campo .jpeg" alt="Campo e cidade">
+          <p><small>Integração entre áreas urbanas e rurais.</small></p>
+        </div>
+        <div>
+          <img src="feira rural.jpeg" alt="Feira rural">
+          <p><small>Feiras valorizando produtos da agricultura familiar.</small></p>
+        </div>
+        <div>
+          <img src="criança plantando.jpeg" alt="Crianças plantando">
+          <p><small>Educação ambiental e agricultura para crianças.</small></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos">
+      <h2>Depoimentos</h2>
+      <blockquote>
+        "Aprendi a cuidar da natureza e entender de onde vem a comida que chega na nossa mesa!"<br>
+        <cite>– Ana Clara, 10 anos</cite>
+      </blockquote>
+      <blockquote>
+        "Esse projeto une aprendizado e cultura. Me emocionou ver a cidade valorizando o campo."<br>
+        <cite>– Professor Marcos da Silva Nascimento</cite>
+      </blockquote>
+      <blockquote>
+        "O Agrinho fez a comunidade escolar se sentir parte de algo maior."<br>
+        <cite>– Diretora Silvia</cite>
+        <blockquote>
+        
+      </blockquote>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Tem dúvidas, sugestões ou quer participar do Agrinho 2025? Envie uma mensagem, será um prazer falar com você!</p>
+      <form onsubmit="alert('Mensagem enviada com sucesso!'); return false;">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Agrinho. Todos os direitos reservados ao criador desse site.
+  </footer>
+
+</body>
+</html>
